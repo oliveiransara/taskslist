@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       task: "",
-      taskList: [],
+      tasksList: [],
       pendent: false,
     };
   },
@@ -72,7 +72,7 @@ export default {
     },
   },
   watch: {
-    tasks: {
+    tasksList: {
       deep: true,
       handler() {
           const filteredConcluded = this.tasksList.filter(

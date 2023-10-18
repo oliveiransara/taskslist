@@ -11,7 +11,7 @@
       </li>
     </ul>
     <div class="footer">
-      <button @click="setCleanList(task)">Limpar</button>
+      <button @click="setCleanList()">Limpar</button>
     </div>
   </div>
 </template>
@@ -55,10 +55,6 @@ ul li {
 
 li:not(:first-child) {
   border-top: 1px solid #eee;
-}
-
-span {
-  color: #000;
 }
 
 button {
